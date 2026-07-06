@@ -1,16 +1,169 @@
-# React + Vite
+# Sigma Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Sigma Website is the official corporate website for Sigma. It is designed to showcase the company's services, products, and business information while providing a modern, responsive, and SEO-friendly experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is being developed with scalability in mind so that it can later be extended into a complete e-commerce platform.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Goals
 
-## Expanding the ESLint configuration
+- Build a modern and professional company website.
+- Provide information about the company and its services.
+- Showcase products and solutions.
+- Improve online presence through SEO.
+- Ensure responsive design for all devices.
+- Prepare the project for future e-commerce features.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+### Current Features
+
+- Responsive Design
+- Home Page
+- About Us
+- Services
+- Products Showcase
+- Contact Page
+- Modern UI/UX
+- SEO Optimization
+- Fast Loading Performance
+
+### Planned Features
+
+- Shopping Cart
+- User Authentication
+- Product Management
+- Payment Gateway Integration
+- Admin Dashboard
+- Order Management
+- Inventory Management
+- Customer Accounts
+- Search & Filtering
+- Product Reviews
+
+---
+
+## Technology Stack
+
+### Frontend
+
+- React
+- Vite
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+### Development Tools
+
+- Git
+- GitHub
+- Visual Studio Code
+- WSL2 (Kali Linux)
+
+---
+
+## Project Structure
+
+```
+sigma-website/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+└── README.md
+```
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/itsshashanksp/sigma-website.git
+```
+
+Navigate to the project
+
+```bash
+cd sigma-website
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+## Development Roadmap
+
+### Phase 1
+- Project Setup
+- Website Design
+- Home Page
+- About Page
+- Services Page
+- Products Page
+- Contact Page
+
+### Phase 2
+- SEO Optimization
+- Performance Optimization
+- Deployment
+
+### Phase 3
+- Product Catalog
+- Shopping Cart
+- User Authentication
+- Payment Gateway
+
+### Phase 4
+- Admin Dashboard
+- Inventory Management
+- Order Tracking
+
+---
+
+## SEO Strategy
+
+- Semantic HTML
+- Meta Tags
+- Open Graph Tags
+- Structured Data
+- Sitemap
+- Robots.txt
+- Mobile Friendly Design
+- Image Optimization
+- Performance Optimization
+
+---
+
+## Deployment
+
+The website will be deployed using a static hosting platform during the initial phase and can later be migrated to a full-stack hosting solution as new features are introduced.
+
+---
+
+## License
+
+This project is developed for Sigma and is intended for official business use.
