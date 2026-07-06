@@ -1,0 +1,39 @@
+/* ===========================
+   Sigma Consultants Design System
+   Version: 1.0
+=========================== */
+
+:root {
+
+  /* Primary Brand Colors */
+  --primary-color: #0056D2;
+  --primary-dark: #0043A8;
+  --primary-light: #3B82F6;
+
+  /* Secondary Colors */
+  --secondary-color: #1F2937;
+  --accent-color: #10B981;
+
+  /* Background Colors */
+  --background: #FFFFFF;
+  --background-light: #F8FAFC;
+  --background-dark: #111827;
+
+  /* Text Colors */
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --text-light: #FFFFFF;
+
+  /* Border */
+  --border-color: #E5E7EB;
+
+  /* Success */
+  --success: #22C55E;
+
+  /* Warning */
+  --warning: #F59E0B;
+
+  /* Error */
+  --danger: #EF4444;
+
+}
