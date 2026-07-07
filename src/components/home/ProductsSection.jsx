@@ -34,7 +34,7 @@ const products = [
 
 const ProductsSection = () => {
   return (
-    <section className="products section">
+    <section id="products" className="products section">
       <div className="container">
 
         <span className="section-tag">

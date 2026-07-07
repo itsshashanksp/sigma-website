@@ -11,7 +11,7 @@ const industries = [
 
 const IndustriesSection = () => {
   return (
-    <section className="industries section">
+    <section id="industries" className="industries section">
       <div className="container">
 
         <span className="section-tag">Industries We Serve</span>

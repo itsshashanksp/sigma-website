@@ -1,6 +1,6 @@
 const TestimonialsSection = () => {
   return (
-    <section className="testimonials section">
+    <section id="testimonials" className="testimonials section">
       <div className="container">
 
         <span className="section-tag">

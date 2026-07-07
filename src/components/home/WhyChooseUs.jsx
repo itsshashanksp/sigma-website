@@ -42,7 +42,7 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="why section">
+    <section id="why" className="why section">
       <div className="container">
         <span className="section-tag">Why Choose Us</span>
 

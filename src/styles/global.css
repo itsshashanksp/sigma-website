@@ -165,23 +165,46 @@ textarea{
 }
 
 .navbar-container{
+    width:95%;
+    max-width:1400px;
     height:100%;
+    margin:0 auto;
+
     display:flex;
-    justify-content:space-between;
     align-items:center;
 }
 
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    flex-shrink:0;
+}
+
+.logo img{
+    width:44px;
+    height:44px;
+    display:block;
+    object-fit:contain;
+}
+
 .logo h2{
+    margin:0;
     font-family:"Poppins",sans-serif;
     font-size:1.8rem;
     font-weight:700;
     color:var(--primary);
 }
 
+/* Push navigation to the right */
+nav{
+    margin-left:auto;
+}
+
 .nav-links{
     display:flex;
     align-items:center;
-    gap:35px;
+    gap:38px;
 }
 
 .nav-links li{
@@ -189,9 +212,11 @@ textarea{
 }
 
 .nav-links a{
+    font-family:"Inter",sans-serif;
     font-size:1rem;
     font-weight:500;
     color:var(--text-primary);
+    text-decoration:none;
     transition:0.3s ease;
 }
 

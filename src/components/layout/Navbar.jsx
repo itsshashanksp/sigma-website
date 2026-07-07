@@ -5,37 +5,27 @@ const Navbar = () => {
     <header className="navbar">
       <div className="container navbar-container">
 
-        <div className="logo">
-          <h2>Sigma Consultants</h2>
-        </div>
+<div className="logo">
+    <img
+        src="/images/logo/sigma-logo.svg"
+        alt="Sigma Consultants Logo"
+        className="logo-img"
+    />
+
+    <h2>Sigma Consultants</h2>
+</div>
 
         <nav>
           <ul className="nav-links">
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-
-            <li>
-              <NavLink to="/about">About</NavLink>
-            </li>
-
-            <li>
-              <NavLink to="/services">Services</NavLink>
-            </li>
-
-            <li>
-              <NavLink to="/products">Products</NavLink>
-            </li>
-
-            <li>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#why">Why us</a></li>
+              <li><a href="#industries">Industries</a></li>
+              <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-
-        <button className="quote-btn">
-          Get a Quote
-        </button>
 
       </div>
     </header>

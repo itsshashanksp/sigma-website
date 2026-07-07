@@ -1,6 +1,6 @@
 const CTASection = () => {
   return (
-    <section className="cta section">
+    <section id="contact" className="cta section">
       <div className="container">
 
         <div className="cta-box">
