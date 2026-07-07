@@ -66,7 +66,7 @@ textarea{
 .section-tag{
     display:inline-block;
     padding:8px 18px;
-    background:#E8F1FF;
+    background:#F5E8E3;
     color:var(--primary);
     border-radius:50px;
     font-size:.9rem;
@@ -225,7 +225,7 @@ textarea{
     min-height:calc(100vh - 80px);
     display:flex;
     align-items:center;
-    background:linear-gradient(135deg,#F8FAFC,#EAF2FF);
+    background:var(--background-light);
 }
 
 .hero-content{
@@ -235,7 +235,7 @@ textarea{
 .hero-badge{
     display:inline-block;
     padding:8px 18px;
-    background:#E8F1FF;
+    background:#F5E8E3;
     color:var(--primary);
     border-radius:50px;
     font-size:.9rem;
