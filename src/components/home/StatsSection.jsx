@@ -6,12 +6,12 @@ const StatsSection = () => {
         <div className="stats-grid">
 
           <div className="stat-card">
-            <h2>20+</h2>
+            <h2>30+</h2>
             <p>Years Experience</p>
           </div>
 
           <div className="stat-card">
-            <h2>1000+</h2>
+            <h2>20+</h2>
             <p>Projects</p>
           </div>
 

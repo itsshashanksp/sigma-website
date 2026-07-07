@@ -3,7 +3,7 @@ const Hero = () => {
     <section className="hero">
       <div className="container hero-content">
         <span className="hero-badge">
-          20+ Years of Experience
+          30+ Years of Experience
         </span>
 
         <h1>

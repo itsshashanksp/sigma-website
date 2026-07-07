@@ -10,7 +10,7 @@ const AboutSection = () => {
           </span>
 
           <h2>
-            Over 20 Years of Delivering Technology Solutions
+            Over 30+ Years of Delivering Technology Solutions
           </h2>
 
           <p>

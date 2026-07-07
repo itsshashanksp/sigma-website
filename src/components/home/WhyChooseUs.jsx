@@ -10,8 +10,8 @@ import {
 const features = [
   {
     icon: <FaAward />,
-    title: "20+ Years Experience",
-    description: "Delivering reliable technology solutions for over two decades.",
+    title: "30+ Years Experience",
+    description: "Delivering reliable technology solutions for over tree decades.",
   },
   {
     icon: <FaUsers />,
