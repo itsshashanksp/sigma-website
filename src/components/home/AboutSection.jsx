@@ -33,12 +33,10 @@ const AboutSection = () => {
         </div>
 
         <div className="about-image">
-
           <img
-            src="/images/about/about-company.jpg"
+            src="/images/about/about-company.png"
             alt="Sigma Consultants"
           />
-
         </div>
 
       </div>
