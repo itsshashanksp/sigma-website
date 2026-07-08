@@ -7,6 +7,7 @@ import IndustriesSection from "../components/home/IndustriesSection";
 import StatsSection from "../components/home/StatsSection";
 import CTASection from "../components/home/CTASection";
 import TestimonialsSection from "../components/home/TestimonialsSection";
+import LocateUsSection from "../components/home/LocateUsSection";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <IndustriesSection />
       <StatsSection />
       <TestimonialsSection />
+      <LocateUsSection />
       <CTASection />
     </>
   );
