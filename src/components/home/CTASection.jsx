@@ -1,3 +1,5 @@
+import { NavLink  } from "react-router-dom";
+
 const CTASection = () => {
   return (
     <section id="contact" className="cta section">
@@ -14,10 +16,9 @@ const CTASection = () => {
             enterprise technology, hardware solutions, and business automation.
           </p>
 
-          <a href="/enquiry" className="primary-btn">
+          <NavLink  to="/enquiry" className="primary-btn">
             Enquiry
-          </a>
-
+          </NavLink >
         </div>
 
       </div>

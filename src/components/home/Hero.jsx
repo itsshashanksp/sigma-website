@@ -7,13 +7,14 @@ const Hero = () => {
         </span>
 
         <h1>
-          Empowering Businesses Through Smart Technology Solutions
+          Powering Businesses with Smart POS & Software Solutions
         </h1>
 
         <p>
-          Sigma Consultants delivers innovative software development,
-          IT consulting, enterprise solutions, barcode systems,
-          and premium technology products for businesses.
+          Sigma Software Solutions delivers innovative POS software,
+          business applications, barcode systems, enterprise hardware, 
+          and IT consulting to help businesses improve efficiency,
+          streamline operations, and accelerate growth.
         </p>
 
         <div className="hero-buttons">

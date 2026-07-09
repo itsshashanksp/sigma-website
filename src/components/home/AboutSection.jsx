@@ -10,20 +10,21 @@ const AboutSection = () => {
           </span>
 
           <h2>
-            Over 30+ Years of Delivering Technology Solutions
+            Over 30+ Years of Trusted Technology Excellence
           </h2>
 
           <p>
-            Sigma Consultants is a trusted technology partner specializing in
-            software development, IT consulting, enterprise solutions,
-            computer peripherals, barcode systems, and innovative web
-            products.
+            Since our inception, Sigma Software Solutions has been committed 
+            to helping businesses embrace technology with confidence. 
+            Over the past three decades, we have built long-lasting 
+            relationships by delivering reliable software, quality hardware, 
+            and exceptional customer support.
           </p>
 
           <p>
-            For more than two decades, we have helped businesses improve
-            efficiency through reliable technology, quality products,
-            and customer-focused solutions.
+            As the creators of the BINS POS System, we provide complete business 
+            technology solutions from software development and POS systems to barcode solutions, 
+            enterprise hardware, and after-sales services ensuring our clients have everything they need under one roof.
           </p>
 
           <button className="primary-btn">
@@ -34,8 +35,8 @@ const AboutSection = () => {
 
         <div className="about-image">
           <img
-            src="/images/about/about-company.png"
-            alt="Sigma Consultants"
+            src={`${import.meta.env.BASE_URL}images/about/about-company.png`}
+            alt="About"
           />
         </div>
 

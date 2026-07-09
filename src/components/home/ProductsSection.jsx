@@ -3,9 +3,30 @@ import {
   FaWordpress,
   FaShareAlt,
   FaBarcode,
+  FaEye,
+  FaShieldAlt, 
+  FaWrench,
 } from "react-icons/fa";
 
 const products = [
+  {
+    icon: <FaEye />,
+    title: "Creator of BINS",
+    description:
+      "BINS is SIGMA's flagship Point of Sale (POS) solution, successfully serving businesses for more than 30 years. Built for reliability, efficiency, and scalability, it empowers organizations to simplify operations and enhance productivity.",
+  },
+  {
+    icon: <FaShieldAlt />,
+    title: "Dealers of POS Equipment",
+    description:
+      "SIGMA provides a complete range of POS hardware, including computers, receipt printers, barcode scanners, cash drawers, and other essential equipment. Our solutions are carefully selected to integrate seamlessly with BINS for reliable business operations.",
+  },
+  {
+    icon: <FaWrench />,
+    title: "After-Sales Services",
+    description:
+      "Our commitment continues beyond installation. We offer comprehensive after-sales support, including software updates, hardware maintenance, troubleshooting, and technical assistance to ensure your POS system operates smoothly at all times.",
+  },
   {
     icon: <FaBookOpen />,
     title: "DearFlip",
@@ -17,12 +38,6 @@ const products = [
     title: "JS DearFlip",
     description:
       "A JavaScript-based flipbook solution that works across modern browsers without WordPress dependency.",
-  },
-  {
-    icon: <FaShareAlt />,
-    title: "MashShare",
-    description:
-      "High-performance social sharing plugin designed to increase engagement and website traffic.",
   },
   {
     icon: <FaBarcode />,
