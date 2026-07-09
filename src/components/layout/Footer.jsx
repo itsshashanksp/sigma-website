@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="container">
 
         <p>
-          © {new Date().getFullYear()} Sigma Consultants.
+          © {new Date().getFullYear()} Sigma Software Solutions.
           All Rights Reserved.
         </p>
 

@@ -10,7 +10,7 @@ const Navbar = () => {
         className="logo-img"
     />
 
-    <h2>Sigma Consultants</h2>
+    <h2>Sigma Software Solutions</h2>
 </div>
 
         <nav>
@@ -21,7 +21,6 @@ const Navbar = () => {
               <li><a href="/#products">Products</a></li>
               <li><a href="/#why">Why us</a></li>
               <li><a href="/#industries">Industries</a></li>
-              <li><a href="/#contactus">Contact Us</a></li>
               <li><a href="/#locateus">Locate Us</a></li>
               <li><a href="/enquiry">Enquiry</a></li>
           </ul>

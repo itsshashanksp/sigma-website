@@ -7,7 +7,6 @@ import IndustriesSection from "../components/home/IndustriesSection";
 import StatsSection from "../components/home/StatsSection";
 import CTASection from "../components/home/CTASection";
 import LocateUsSection from "../components/home/LocateUsSection";
-import ContactUs from "../components/home/ContactUs";
 
 const Home = () => {
   return (
@@ -19,7 +18,6 @@ const Home = () => {
       <WhyChooseUs />
       <IndustriesSection />
       <StatsSection />
-      <ContactUs />
       <LocateUsSection />
       <CTASection />
     </>
