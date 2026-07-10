@@ -1,0 +1,167 @@
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.primary-btn,
+.secondary-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:14px 28px;
+    border-radius:10px;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    text-decoration:none;
+    transition:all .3s ease;
+}
+
+.primary-btn{
+    background:var(--primary);
+    color:#fff;
+    border:2px solid var(--primary);
+}
+
+.primary-btn:hover{
+    background:var(--primary-dark);
+    border-color:var(--primary-dark);
+    transform:translateY(-3px);
+    color:#fff;
+}
+
+.secondary-btn{
+    background:#fff;
+    color:var(--primary);
+    border:2px solid var(--primary);
+}
+
+.secondary-btn:hover{
+    background:var(--primary);
+    color:#fff;
+    transform:translateY(-3px);
+}
+
+/* ==========================================
+   CARD BUTTON
+========================================== */
+
+.learn-more{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:auto;
+    color:var(--primary);
+    font-weight:600;
+    transition:.3s;
+}
+
+.learn-more:hover{
+    gap:14px;
+}
+
+/* ==========================================
+   ICON CIRCLE
+========================================== */
+
+.icon-circle{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(189,79,52,.1);
+    color:var(--primary);
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+/* ==========================================
+   STATS
+========================================== */
+
+.stats{
+    margin-top:60px;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.stat-item{
+    text-align:center;
+}
+
+.stat-item h3{
+    font-size:2.5rem;
+    color:var(--primary);
+    font-family:"Poppins",sans-serif;
+}
+
+.stat-item p{
+    color:var(--text-secondary);
+    margin-top:8px;
+}
+
+/* ==========================================
+   BADGES
+========================================== */
+
+.badge{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:50px;
+    background:#F5E8E3;
+    color:var(--primary);
+    font-size:.9rem;
+    font-weight:600;
+}
+
+/* ==========================================
+   COMMON CARDS
+========================================== */
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+    .primary-btn,
+    .secondary-btn{
+        width:100%;
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+
+    .stat-item h3{
+        font-size:2rem;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+}

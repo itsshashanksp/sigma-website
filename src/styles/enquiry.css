@@ -1,0 +1,108 @@
+/* ==========================================
+   ENQUIRY PAGE
+========================================== */
+
+.contact-page{
+    min-height:calc(100vh - 80px);
+    background:var(--background-light);
+    display:flex;
+    align-items:center;
+    padding:80px 0;
+}
+
+.contact-page-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.contact-copy .section-description{
+    margin-bottom:0;
+}
+
+.contact-form{
+    background:#fff;
+    padding:38px;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+    border:1px solid var(--border);
+
+    display:grid;
+    gap:22px;
+}
+
+.form-field{
+    display:grid;
+    gap:8px;
+}
+
+.form-field label{
+    font-weight:600;
+}
+
+.input-wrap{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:0 16px;
+    border:1px solid var(--border);
+    border-radius:10px;
+    transition:.3s;
+}
+
+.input-wrap:focus-within{
+    border-color:var(--primary);
+}
+
+.input-wrap svg{
+    color:var(--primary);
+}
+
+.input-wrap input{
+    width:100%;
+    border:none;
+    padding:15px 0;
+    font-size:1rem;
+    background:none;
+}
+
+.contact-submit{
+    width:fit-content;
+    gap:10px;
+}
+
+.form-success{
+    color:green;
+    font-weight:600;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    .contact-page-container{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .contact-page{
+        padding:60px 0;
+    }
+
+    .contact-form{
+        padding:25px;
+    }
+
+    .contact-submit{
+        width:100%;
+        justify-content:center;
+    }
+
+}

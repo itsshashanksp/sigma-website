@@ -1,0 +1,95 @@
+/* ==========================================
+   ABOUT
+========================================== */
+
+.about{
+    background:#fff;
+}
+
+.about-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about-content h2{
+    font-size:2.7rem;
+    font-family:"Poppins",sans-serif;
+    color:var(--secondary);
+    margin-bottom:20px;
+}
+
+.about-content p{
+    color:var(--text-secondary);
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.about-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.about-image img{
+    width:100%;
+    max-width:550px;
+    height:auto;
+    object-fit:cover;
+    border-radius:16px;
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width:992px){
+
+    .about-container{
+        gap:40px;
+    }
+
+    .about-content h2{
+        font-size:2.2rem;
+    }
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width:768px){
+
+    .about{
+        padding:70px 0;
+    }
+
+    .about-container{
+        display:flex;
+        flex-direction:column;
+        gap:35px;
+    }
+
+    /* Image first */
+    .about-image{
+        order:-1;
+        width:100%;
+    }
+
+    .about-image img{
+        width:100%;
+        max-width:100%;
+        border-radius:14px;
+    }
+
+    .about-content{
+        text-align:center;
+    }
+
+    .about-content h2{
+        font-size:2rem;
+    }
+
+}

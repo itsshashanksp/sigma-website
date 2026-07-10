@@ -1,0 +1,76 @@
+/* ==========================================
+   INDUSTRIES
+========================================== */
+
+.industries{
+    background:#fff;
+}
+
+.industries .section-tag{
+    display:block;
+    width:max-content;
+    margin:0 auto 20px;
+}
+
+.industries .section-heading{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 50px;
+}
+
+.industries-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.industry-card{
+    background:var(--background-light);
+    border-radius:18px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:.3s;
+    border:1px solid transparent;
+}
+
+.industry-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary);
+    background:#fff;
+}
+
+.industry-card h3{
+    color:var(--secondary);
+    font-family:"Poppins",sans-serif;
+    font-size:1.2rem;
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media(max-width:992px){
+
+    .industries-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media(max-width:768px){
+
+    .industries-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .industry-card{
+        padding:28px 20px;
+    }
+
+}
