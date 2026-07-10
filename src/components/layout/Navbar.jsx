@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { Menu, X } from "lucide-react";
+
+const base = import.meta.env.BASE_URL;
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <header className="navbar">
@@ -16,14 +17,14 @@ const Navbar = () => {
         {/* Logo */}
         <div className="logo">
           <img
-            src={`${import.meta.env.BASE_URL}sigma-logo.svg`}
+            src={`${base}sigma-logo.svg`}
             alt="Sigma Software Solutions Logo"
             className="logo-img"
           />
           <h2>Sigma Software Solutions</h2>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu */}
         <button
           className="menu-btn"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -36,73 +37,49 @@ const Navbar = () => {
           <ul className="nav-links">
 
             <li>
-              <a
-                href={`${import.meta.env.BASE_URL}#home`}
-                onClick={closeMenu}
-              >
+              <HashLink smooth to={`${base}#home`} onClick={closeMenu}>
                 Home
-              </a>
+              </HashLink>
             </li>
 
             <li>
-              <a
-                href={`${import.meta.env.BASE_URL}#about`}
-                onClick={closeMenu}
-              >
+              <HashLink smooth to={`${base}#about`} onClick={closeMenu}>
                 About
-              </a>
+              </HashLink>
             </li>
 
             <li>
-              <a
-                href={`${import.meta.env.BASE_URL}#services`}
-                onClick={closeMenu}
-              >
+              <HashLink smooth to={`${base}#services`} onClick={closeMenu}>
                 Services
-              </a>
+              </HashLink>
             </li>
 
             <li>
-              <a
-                href={`${import.meta.env.BASE_URL}#products`}
-                onClick={closeMenu}
-              >
+              <HashLink smooth to={`${base}#products`} onClick={closeMenu}>
                 Products
-              </a>
+              </HashLink>
             </li>
 
             <li>
-              <a
-                href={`${import.meta.env.BASE_URL}#why`}
-                onClick={closeMenu}
-              >
+              <HashLink smooth to={`${base}#why`} onClick={closeMenu}>
                 Why Us
-              </a>
+              </HashLink>
             </li>
 
             <li>
-              <a
-                href={`${import.meta.env.BASE_URL}#industries`}
-                onClick={closeMenu}
-              >
+              <HashLink smooth to={`${base}#industries`} onClick={closeMenu}>
                 Industries
-              </a>
+              </HashLink>
             </li>
 
             <li>
-              <a
-                href={`${import.meta.env.BASE_URL}#locateus`}
-                onClick={closeMenu}
-              >
+              <HashLink smooth to={`${base}#locateus`} onClick={closeMenu}>
                 Locate Us
-              </a>
+              </HashLink>
             </li>
 
             <li>
-              <NavLink
-                to="/enquiry"
-                onClick={closeMenu}
-              >
+              <NavLink to="/enquiry" onClick={closeMenu}>
                 Enquiry
               </NavLink>
             </li>

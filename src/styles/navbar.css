@@ -3,20 +3,28 @@
 ========================================== */
 
 .navbar{
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background: #fff;
-    border-bottom: 1px solid var(--border);
-    z-index: 1000;
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    background:#fff;
+    border-bottom:1px solid var(--border);
+    z-index:1000;
+}
+
+/* Make navbar wider than page content */
+.navbar .container{
+    width:100%;
+    max-width:1600px;
+    margin:0 auto;
+    padding:0 35px;
 }
 
 .navbar-container{
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
     height:100%;
 }
 
@@ -24,22 +32,23 @@
     display:flex;
     align-items:center;
     gap:12px;
+    flex-shrink:0;
 }
 
 .logo-img{
-    width:44px;
-    height:44px;
+    width:42px;
+    height:42px;
     object-fit:contain;
 }
 
 .logo h2{
-    font-size:1.5rem;
-    color:var(--primary);
     font-family:"Poppins",sans-serif;
+    font-size:1.55rem;
+    font-weight:700;
+    color:var(--primary);
     white-space:nowrap;
+    line-height:1;
 }
-
-/* Desktop Navigation */
 
 .nav-menu{
     margin-left:auto;
@@ -48,21 +57,37 @@
 .nav-links{
     display:flex;
     align-items:center;
-    gap:32px;
+    gap:24px;
 }
 
-.nav-links a{
+.nav-links li{
+    display:flex;
+    align-items:center;
+}
+
+.nav-links a,
+.nav-link-btn{
+    background:none;
+    border:none;
+    padding:0;
+    cursor:pointer;
+    font-family:inherit;
     font-size:1rem;
     font-weight:500;
+    color:var(--secondary);
+    text-decoration:none;
     transition:.3s;
 }
 
 .nav-links a:hover,
+.nav-link-btn:hover,
 .nav-links .active{
     color:var(--primary);
 }
 
-/* Mobile Button */
+/* ==========================
+   Mobile Menu Button
+========================== */
 
 .menu-btn{
     display:none;
@@ -77,17 +102,47 @@
 }
 
 /* ==========================
-   Tablet
+   Large Tablet
 ========================== */
 
-@media (max-width:992px){
+@media(max-width:1200px){
+
+    .navbar-container{
+        padding:0 20px;
+        gap:30px;
+    }
 
     .logo h2{
-        font-size:1.2rem;
+        font-size:1.6rem;
     }
 
     .nav-links{
-        gap:22px;
+        gap:24px;
+    }
+
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media(max-width:992px){
+
+    .navbar-container{
+        gap:20px;
+    }
+
+    .logo h2{
+        font-size:1.3rem;
+    }
+
+    .nav-links{
+        gap:18px;
+    }
+
+    .nav-links a,
+    .nav-link-btn{
+        font-size:.95rem;
     }
 
 }
@@ -96,10 +151,16 @@
    Mobile
 ========================== */
 
-@media (max-width:768px){
+@media(max-width:768px){
 
     .navbar{
         height:70px;
+    }
+
+    .navbar-container{
+        display:flex;
+        justify-content:space-between;
+        padding:0 18px;
     }
 
     .logo-img{
@@ -126,6 +187,7 @@
         width:280px;
         height:calc(100vh - 70px);
         background:#fff;
+        display:block;
         box-shadow:-10px 0 25px rgba(0,0,0,.12);
         transition:right .3s ease;
         z-index:1100;
@@ -138,6 +200,7 @@
     .nav-links{
         flex-direction:column;
         align-items:flex-start;
+        justify-content:flex-start;
         gap:0;
         padding:25px;
     }
@@ -146,11 +209,13 @@
         width:100%;
     }
 
-    .nav-links a{
+    .nav-links a,
+    .nav-link-btn{
         display:block;
         width:100%;
         padding:16px 0;
         border-bottom:1px solid #eee;
+        text-align:left;
     }
 
 }

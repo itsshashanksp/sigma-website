@@ -1,8 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Mail, Phone, User, Building2, Send } from "lucide-react";
 
 const Enquiry = () => {
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -14,43 +21,71 @@ const Enquiry = () => {
       <div className="container contact-page-container">
         <div className="contact-copy">
           <span className="section-tag">Enquiry</span>
-          <h1 className="section-heading">Request a Consultation</h1>
+
+          <h1 className="section-heading">
+            Request a Consultation
+          </h1>
+
           <p className="section-description">
-            Share your details and our team will get back to you for consultation,
-            technology solutions, and business discussions.
+            Share your details and our team will get back to you for
+            consultation, technology solutions, and business discussions.
           </p>
         </div>
 
         <form className="contact-form" onSubmit={handleSubmit}>
           <label className="form-field">
             <span>Name</span>
+
             <div className="input-wrap">
               <User size={20} />
-              <input type="text" name="name" placeholder="Enter your name" required />
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
             </div>
           </label>
 
           <label className="form-field">
             <span>Email ID</span>
+
             <div className="input-wrap">
               <Mail size={20} />
-              <input type="email" name="email" placeholder="Enter your email" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
             </div>
           </label>
 
           <label className="form-field">
             <span>Mobile Number</span>
+
             <div className="input-wrap">
               <Phone size={20} />
-              <input type="tel" name="mobile" placeholder="Enter mobile number" required />
+              <input
+                type="tel"
+                name="mobile"
+                placeholder="Enter mobile number"
+                required
+              />
             </div>
           </label>
 
           <label className="form-field">
             <span>Company Name</span>
+
             <div className="input-wrap">
               <Building2 size={20} />
-              <input type="text" name="company" placeholder="Enter company name" required />
+              <input
+                type="text"
+                name="company"
+                placeholder="Enter company name"
+                required
+              />
             </div>
           </label>
 
@@ -61,7 +96,7 @@ const Enquiry = () => {
 
           {submitted && (
             <p className="form-success">
-              Thank you. Your enquiry details are ready for the Sigma Consultants team.
+              Thank you. Your enquiry details are ready for the Sigma Software Solutions team.
             </p>
           )}
         </form>
