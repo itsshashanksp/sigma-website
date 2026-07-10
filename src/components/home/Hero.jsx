@@ -1,31 +1,28 @@
 const Hero = () => {
   return (
     <section id="home" className="hero">
-      <div className="container hero-content">
-        <span className="hero-badge">
-          30+ Years of Experience
-        </span>
+      <div className="container hero-wrapper">
 
-        <h1>
-          Powering Businesses with Smart POS & Software Solutions
-        </h1>
+        <div className="hero-content">
+          <span className="hero-badge">30+ Years of Experience</span>
 
-        <p>
-          Sigma Software Solutions delivers innovative POS software,
-          business applications, barcode systems, enterprise hardware, 
-          and IT consulting to help businesses improve efficiency,
-          streamline operations, and accelerate growth.
-        </p>
+          <h1>
+            Powering Businesses with Smart POS & Software Solutions
+          </h1>
 
-        <div className="hero-buttons">
-          <button className="primary-btn">
-            Explore Services
-          </button>
+          <p>
+            Sigma Software Solutions delivers innovative POS software,
+            business applications, barcode systems, enterprise hardware,
+            and IT consulting to help businesses improve efficiency,
+            streamline operations, and accelerate growth.
+          </p>
 
-          <button className="secondary-btn">
-            Contact Us
-          </button>
+          <div className="hero-buttons">
+            <button className="primary-btn">Explore Services</button>
+            <button className="secondary-btn">Contact Us</button>
+          </div>
         </div>
+
       </div>
     </section>
   );
