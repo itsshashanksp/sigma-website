@@ -24,7 +24,7 @@ const LocateUsSection = () => {
               <MapPin />
             </div>
 
-            <h3>Sigma Consultants</h3>
+            <h3>Sigma Software Solutions</h3>
 
             <p>
               No.142, 2nd Floor, 7th Cross, 3rd Main,
