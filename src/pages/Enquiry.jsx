@@ -1,5 +1,13 @@
 import { useState, useEffect } from "react";
-import { Mail, Phone, User, Building2, Send } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  User,
+  Building2,
+  Send,
+  Clock,
+  MessageSquare,
+} from "lucide-react";
 
 const Enquiry = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -19,6 +27,7 @@ const Enquiry = () => {
   return (
     <main className="contact-page">
       <div className="container contact-page-container">
+        {/* Left Content */}
         <div className="contact-copy">
           <span className="section-tag">Enquiry</span>
 
@@ -30,14 +39,49 @@ const Enquiry = () => {
             Share your details and our team will get back to you for
             consultation, technology solutions, and business discussions.
           </p>
+
+          {/* Contact Information */}
+          <div className="contact-info">
+
+            <div className="info-card">
+            <div className="icon-box">
+             <Phone size={22} />
+            </div>
+
+              <div>
+                <h3>Call Us</h3>
+                <a href="tel:+919876543210" className="contact-link">
+                  +91 98450 21606
+                </a>
+              </div>
+            </div>
+
+            <div className="info-card">
+            <div className="icon-box">
+             <Mail size={22} />
+            </div>
+
+              <div>
+                <h3>Email Us</h3>
+                <a
+                 href="mailto:info@sigmasoftwaresolutions.co.in" className="contact-link">
+                 info@sigmasoftwaresolutions.com
+                </a>
+              </div>
+            </div>
+
+          </div>
         </div>
 
+        {/* Form */}
         <form className="contact-form" onSubmit={handleSubmit}>
+
           <label className="form-field">
             <span>Name</span>
 
             <div className="input-wrap">
               <User size={20} />
+
               <input
                 type="text"
                 name="name"
@@ -52,6 +96,7 @@ const Enquiry = () => {
 
             <div className="input-wrap">
               <Mail size={20} />
+
               <input
                 type="email"
                 name="email"
@@ -66,6 +111,7 @@ const Enquiry = () => {
 
             <div className="input-wrap">
               <Phone size={20} />
+
               <input
                 type="tel"
                 name="mobile"
@@ -76,16 +122,34 @@ const Enquiry = () => {
           </label>
 
           <label className="form-field">
-            <span>Company Name</span>
+            <span>Company Name (Optional)</span>
 
             <div className="input-wrap">
               <Building2 size={20} />
+
               <input
                 type="text"
                 name="company"
                 placeholder="Enter company name"
-                required
               />
+            </div>
+          </label>
+
+          <label className="form-field">
+            <span>Message</span>
+
+            <div className="input-wrap textarea-wrap">
+              <MessageSquare
+                size={20}
+                className="textarea-icon"
+              />
+
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Tell us about your project or requirements..."
+                required
+              ></textarea>
             </div>
           </label>
 
@@ -96,7 +160,8 @@ const Enquiry = () => {
 
           {submitted && (
             <p className="form-success">
-              Thank you. Your enquiry details are ready for the Sigma Software Solutions team.
+              Thank you! Your enquiry has been submitted successfully. Our team
+              will contact you soon.
             </p>
           )}
         </form>
