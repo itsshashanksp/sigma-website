@@ -5,7 +5,7 @@
 .stats{
     background:linear-gradient(135deg,var(--primary),var(--primary-dark));
     color:#fff;
-    padding: 5px 0 5px;
+    padding: 10px 0 10px;
 }
 
 .stats-grid{
