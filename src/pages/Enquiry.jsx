@@ -17,7 +17,7 @@ const Enquiry = () => {
   };
 
   return (
-    <main className="contact-page section">
+    <main className="contact-page">
       <div className="container contact-page-container">
         <div className="contact-copy">
           <span className="section-tag">Enquiry</span>

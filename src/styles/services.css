@@ -4,7 +4,7 @@
 
 .services{
     background:var(--background-light);
-    padding: 5px 0;
+    padding: 5px 0 5px;
 }
 
 .services-grid{
@@ -86,7 +86,7 @@
 
 .why{
     background:var(--background-light);
-    padding: 5px 0;
+    padding: 5px 0 5px;
 }
 
 .why .section-tag{
