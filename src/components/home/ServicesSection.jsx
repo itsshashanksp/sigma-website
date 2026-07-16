@@ -10,37 +10,37 @@ import {
 const services = [
   {
     icon: <FaCode />,
-    title: "Software Development",
+    title: "POS Software Solutions",
     description:
       "Custom web applications and business software tailored to your requirements.",
   },
   {
     icon: <FaPuzzlePiece />,
-    title: "Plugin Development",
+    title: "Custom Software Development",
     description:
       "Professional WordPress and JavaScript plugins including DearFlip solutions.",
   },
   {
     icon: <FaServer />,
-    title: "IT Consulting",
+    title: "Website & Mobile App Development",
     description:
       "Helping businesses adopt reliable and scalable technology solutions.",
   },
   {
     icon: <FaBarcode />,
-    title: "Barcode Solutions",
+    title: "Barcode & POS Solutions",
     description:
       "Barcode printers, scanners, labels and complete barcode infrastructure.",
   },
   {
     icon: <FaDesktop />,
-    title: "Hardware Solutions",
+    title: "IT Infrastructure & Hardware",
     description:
       "Computer peripherals, laptop accessories and enterprise hardware.",
   },
   {
     icon: <FaLaptopCode />,
-    title: "Enterprise Solutions",
+    title: "Technology Consulting & Support",
     description:
       "End-to-end technology solutions for businesses of all sizes.",
   },
@@ -51,10 +51,10 @@ const ServicesSection = () => {
     <section id="services" className="services section">
       <div className="container">
 
-        <span className="section-tag">Our Services</span>
+        <span className="section-tag">Our Expertise</span>
 
         <h2 className="section-heading">
-          Technology Solutions That Drive Business Success
+          Technology Services Tailored for Modern Businesses
         </h2>
 
         <div className="services-grid">
