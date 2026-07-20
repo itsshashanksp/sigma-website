@@ -3,7 +3,6 @@ import {
   FaGlobe,
   FaMobileAlt,
   FaCode,
-  FaBookOpen,
   FaTools,
   FaDesktop,
   FaBarcode,
@@ -15,67 +14,37 @@ import {
 
 const softwareSolutions = [
   {
+    icon: <FaCode />,
+    title: "Business Software",
+    description: "Custom business applications, ERP systems and workflow automation tailored to your organization.",
+  },
+  {
     icon: <FaCashRegister />,
     title: "BINS POS",
-    description: "Powerful POS software trusted by businesses for over 30 years.",
+    description: "Reliable point-of-sale software trusted by businesses for efficient billing and retail management.",
   },
   {
     icon: <FaGlobe />,
-    title: "Website Development",
-    description: "Modern, responsive and SEO-friendly business websites.",
-  },
-  {
-    icon: <FaMobileAlt />,
-    title: "Mobile Apps",
-    description: "Android & iOS applications tailored to your business needs.",
-  },
-  {
-    icon: <FaCode />,
-    title: "Custom Software",
-    description: "Business applications built specifically for your workflow.",
-  },
-  {
-    icon: <FaBookOpen />,
-    title: "DearFlip Solutions",
-    description: "Interactive digital flipbooks and publishing solutions.",
-  },
-  {
-    icon: <FaTools />,
-    title: "Maintenance & Support",
-    description: "Continuous updates, technical assistance and AMC services.",
+    title: "Websites & Digital Solutions",
+    description: "Professional business websites, e-commerce platforms and digital solutions that strengthen your online presence",
   },
 ];
 
 const hardwareSolutions = [
   {
-    icon: <FaDesktop />,
-    title: "POS Systems",
-    description: "Complete billing and point-of-sale hardware solutions.",
-  },
-  {
     icon: <FaBarcode />,
-    title: "Barcode Solutions",
-    description: "Barcode scanners, labels and identification systems.",
+    title: "POS & Barcode Systems",
+    description: "Complete POS terminals, barcode scanners, receipt printers and billing hardware.",
   },
   {
-    icon: <FaPrint />,
-    title: "Printers",
-    description: "Receipt, barcode and thermal printers for every business.",
-  },
-  {
-    icon: <FaLaptop />,
-    title: "Computers",
-    description: "Desktop computers, laptops and business workstations.",
+    icon: <FaDesktop />,
+    title: "Business Computing",
+    description: "Desktop computers, laptops, workstations and business IT hardware for every workplace.",
   },
   {
     icon: <FaNetworkWired />,
-    title: "Networking",
-    description: "Routers, switches, structured cabling and network setup.",
-  },
-  {
-    icon: <FaPlug />,
-    title: "Accessories",
-    description: "Peripherals, UPS, cables and essential IT accessories.",
+    title: "Networking & Infrastructure",
+    description: "Routers, switches, structured cabling and secure network infrastructure for modern businesses.",
   },
 ];
 
@@ -93,9 +62,7 @@ const ProductsSection = () => {
         </h2>
 
         <p className="section-description">
-          SIGMA delivers end-to-end business technology solutions by combining
-          powerful software with reliable hardware, helping businesses improve
-          productivity, efficiency and long-term growth.
+          From business software to enterprise hardware, SIGMA provides integrated technology solutions that help organizations improve efficiency, productivity and long-term growth.
         </p>
 
         {/* SOFTWARE */}
@@ -105,8 +72,8 @@ const ProductsSection = () => {
           <div className="solution-header">
             <h3>Software Solutions</h3>
             <p>
-              Smart digital solutions built to simplify and automate your
-              business.
+                Powerful software solutions designed to automate business processes,
+                improve productivity and support long-term business growth.
             </p>
           </div>
 
@@ -145,8 +112,8 @@ const ProductsSection = () => {
             <h3>Hardware Solutions</h3>
 
             <p>
-              Reliable hardware and IT infrastructure designed for modern
-              businesses.
+                Reliable IT hardware and infrastructure solutions that power modern
+                businesses with performance, stability and scalability.
             </p>
           </div>
 

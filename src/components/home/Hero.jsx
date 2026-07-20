@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 const heroImage = `${import.meta.env.BASE_URL}images/home/home.png`;
 
 const Hero = () => {
@@ -20,10 +21,15 @@ const Hero = () => {
           </p>
 
           <div className="hero-buttons">
-            <button className="primary-btn">Explore Services</button>
-            <button className="secondary-btn">Contact Us</button>
-          </div>
+
+          <NavLink
+            to="/enquiry"
+            className="primary-btn">
+            Contact Us
+         </NavLink>
         </div>
+      
+       </div>
 
         {/* Right Image */}
         <div className="hero-image">
