@@ -27,10 +27,6 @@ const AboutSection = () => {
             enterprise hardware, and after-sales services ensuring our clients have everything they need under one roof.
           </p>
 
-          <button className="primary-btn">
-            Learn More
-          </button>
-
         </div>
 
         <div className="about-image">

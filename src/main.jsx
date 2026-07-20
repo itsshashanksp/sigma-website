@@ -16,6 +16,8 @@ import "./styles/locateus.css";
 import "./styles/enquiry.css";
 import "./styles/footer.css";
 import "./styles/responsive.css";
+import "./styles/whyChooseUs.css";
+import "./styles/CTA.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

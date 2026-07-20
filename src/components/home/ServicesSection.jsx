@@ -1,48 +1,27 @@
 import {
   FaLaptopCode,
-  FaCode,
   FaServer,
-  FaBarcode,
   FaPuzzlePiece,
-  FaDesktop,
 } from "react-icons/fa";
 
 const services = [
   {
-    icon: <FaCode />,
-    title: "POS Software Solutions",
-    description:
-      "Custom web applications and business software tailored to your requirements.",
-  },
-  {
     icon: <FaPuzzlePiece />,
     title: "Custom Software Development",
     description:
-      "Professional WordPress and JavaScript plugins including DearFlip solutions.",
+      "We design and develop custom software solutions tailored to streamline business operations and improve productivity.",
   },
   {
     icon: <FaServer />,
-    title: "Website & Mobile App Development",
+    title: "Website Development",
     description:
-      "Helping businesses adopt reliable and scalable technology solutions.",
-  },
-  {
-    icon: <FaBarcode />,
-    title: "Barcode & POS Solutions",
-    description:
-      "Barcode printers, scanners, labels and complete barcode infrastructure.",
-  },
-  {
-    icon: <FaDesktop />,
-    title: "IT Infrastructure & Hardware",
-    description:
-      "Computer peripherals, laptop accessories and enterprise hardware.",
+      "We build modern, responsive and SEO-friendly business websites that strengthen your online presence and drive growth.",
   },
   {
     icon: <FaLaptopCode />,
     title: "Technology Consulting & Support",
     description:
-      "End-to-end technology solutions for businesses of all sizes.",
+      "We provide expert technology consulting, implementation and ongoing support to help businesses operate efficiently and confidently.",
   },
 ];
 
@@ -51,12 +30,13 @@ const ServicesSection = () => {
     <section id="services" className="services section">
       <div className="container">
 
-        <span className="section-tag">Our Expertise</span>
+        <span className="section-tag">What We Do</span>
 
         <h2 className="section-heading">
-          Technology Services Tailored for Modern Businesses
+          Technology Services That Help Businesses Grow
         </h2>
 
+        <p>We help businesses transform their operations through custom software, professional websites and reliable technology support tailored to their unique requirements.</p>
         <div className="services-grid">
           {services.map((service, index) => (
             <div className="service-card" key={index}>
