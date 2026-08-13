@@ -5,24 +5,47 @@ const StatsSection = () => {
 
         <div className="stats-grid">
 
-          <div className="stat-card">
-            <h2>30+</h2>
-            <p>Years Experience</p>
+          <div className="stat-item">
+            <span className="stat-number">
+              30+
+            </span>
+
+            <span className="stat-label">
+              Years Experience
+            </span>
           </div>
 
-          <div className="stat-card">
-            <h2>20+</h2>
-            <p>Projects</p>
+
+          <div className="stat-item">
+            <span className="stat-number">
+              20+
+            </span>
+
+            <span className="stat-label">
+              Projects
+            </span>
           </div>
 
-          <div className="stat-card">
-            <h2>500+</h2>
-            <p>Happy Clients</p>
+
+          <div className="stat-item">
+            <span className="stat-number">
+              500+
+            </span>
+
+            <span className="stat-label">
+              Happy Clients
+            </span>
           </div>
 
-          <div className="stat-card">
-            <h2>24/7</h2>
-            <p>Customer Support</p>
+
+          <div className="stat-item">
+            <span className="stat-number">
+              24/7
+            </span>
+
+            <span className="stat-label">
+              Customer Support
+            </span>
           </div>
 
         </div>

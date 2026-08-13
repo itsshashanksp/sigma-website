@@ -1,46 +1,144 @@
-/* ===========================
-   Sigma Consultants Design System
-   Version: 1.0
-=========================== */
+/* ==========================================
+   GOOGLE FONTS
+========================================== */
 
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap');
 
-  /* Primary Brand Colors */
-  --primary: #BD4F34;
-  --primary-dark: #9C3F29;
-  --primary-light: #D97A61;
+/* ==========================================
+   VARIABLES
+========================================== */
 
-  /* Secondary */
-  --secondary: #1F2937;
-  --accent: #E8D4CC;
+:root{
 
-  /* Background */
-  --background: #FFFFFF;
-  --background-light: #FAF8F7;
-  --background-dark: #111827;
+    /* ==========================================
+       BRAND COLORS
+    ========================================== */
 
-  /* Text */
-  --text-primary: #1F2937;
-  --text-secondary: #6B7280;
-  --text-light: #FFFFFF;
+    --primary:#B95F3F;
+    --primary-hover:#A84F32;
+    --primary-dark:#8F3F26;
+    --primary-light:rgba(185,95,63,.10);
 
-  /* Border */
-  --border: #E8E0DC;
+    --secondary:#1F2937;
+    --secondary-light:#374151;
 
-  /* Shadow */
-  --shadow: 0 10px 30px rgba(189, 79, 52, 0.12);
 
-  /* Radius */
-  --radius: 12px;
+    /* ==========================================
+       BACKGROUNDS
+    ========================================== */
 
-  /* Transition */
-  --transition: all .3s ease;
+    --background:#FCF9F7;
+    --background-light:#F7EDE8;
+    --background-dark:#111827;
 
-  /* Container */
-  --container: 1200px;
+    --white:#FFFFFF;
 
-  /* Status */
-  --success: #22C55E;
-  --warning: #F59E0B;
-  --danger: #EF4444;
+
+    /* ==========================================
+       TEXT
+    ========================================== */
+
+    --text-primary:#111827;
+    --text-secondary:#5F7895;
+    --text-light:#94A3B8;
+    --text-white:#FFFFFF;
+
+
+    /* ==========================================
+       BORDERS
+    ========================================== */
+
+    --border:#E5E7EB;
+    --border-light:#F1F5F9;
+    --border-color:#E5E7EB;
+
+
+    /* ==========================================
+       STATUS COLORS
+    ========================================== */
+
+    --success:#16A34A;
+    --warning:#F59E0B;
+    --danger:#DC2626;
+    --info:#2563EB;
+
+
+    /* ==========================================
+       SHADOWS
+    ========================================== */
+
+    --shadow-sm:
+        0 2px 8px rgba(0,0,0,.05);
+
+    --shadow:
+        0 8px 24px rgba(15,23,42,.08);
+
+    --shadow-md:
+        0 12px 32px rgba(15,23,42,.10);
+
+    --shadow-lg:
+        0 20px 50px rgba(15,23,42,.12);
+
+
+    /* ==========================================
+       BORDER RADIUS
+    ========================================== */
+
+    --radius-sm:8px;
+    --radius-md:12px;
+    --radius-lg:18px;
+    --radius-xl:24px;
+
+
+    /* ==========================================
+       CONTAINER
+    ========================================== */
+
+    --container-width:1350px;
+
+
+    /* ==========================================
+       SECTION
+    ========================================== */
+
+    --section-padding:80px;
+
+
+    /* ==========================================
+       SPACING
+    ========================================== */
+
+    --gap-xs:10px;
+    --gap-sm:16px;
+    --gap-md:24px;
+    --gap-lg:32px;
+    --gap-xl:48px;
+
+
+    /* ==========================================
+       TRANSITION
+    ========================================== */
+
+    --transition:.3s ease;
+
+
+    /* ==========================================
+       FONTS
+    ========================================== */
+
+    --heading-font:"Inter",sans-serif;
+    --body-font:"Source Serif 4",serif;
+
+
+    /* ==========================================
+       FONT SIZES
+    ========================================== */
+
+    --hero-size:3.8rem;
+    --section-title:3rem;
+    --sub-title:1.8rem;
+    --card-title:1.3rem;
+    --body-size:1rem;
+    --small-size:.95rem;
+
 }

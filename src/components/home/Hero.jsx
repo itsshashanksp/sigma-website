@@ -1,42 +1,67 @@
-import { NavLink } from "react-router-dom";
-const heroImage = `${import.meta.env.BASE_URL}images/home/home.png`;
-
 const Hero = () => {
   return (
     <section id="home" className="hero">
-      <div className="container hero-wrapper">
+      <div className="hero-container">
 
         <div className="hero-content">
-          <span className="hero-badge">30+ Years of Experience</span>
 
-          <h1>
-            Powering Businesses with Smart POS & Software Solutions
-          </h1>
+          {/* Main statement */}
+          <div className="hero-main">
 
-          <p>
-            Sigma Software Solutions delivers innovative POS software,
-            business applications, barcode systems, enterprise hardware,
-            and IT consulting to help businesses improve efficiency,
-            streamline operations, and accelerate growth.
-          </p>
+            <span className="hero-badge">
+              30+ Years of Technology Experience
+            </span>
 
-          <div className="hero-buttons">
+            <h1>
+              Technology solutions
+              <br />
+              that keep your
+              <br />
+              business running.
+            </h1>
 
-          <NavLink
-            to="/enquiry"
-            className="primary-btn">
-            Contact Us
-         </NavLink>
+          </div>
+
+          {/* Supporting statement */}
+          <div className="hero-description">
+
+            <p>
+              Sigma Software Solutions provides business software,
+              POS technology, IT hardware, and the support needed
+              to keep everyday operations reliable.
+            </p>
+
+          </div>
+
         </div>
-      
-       </div>
 
-        {/* Right Image */}
-        <div className="hero-image">
-          <img
-            src={heroImage}
-            alt="Sigma Software Solutions"
-          />
+        {/* Sigma visual card */}
+        <div className="hero-visual">
+
+          <div className="hero-visual-inner">
+
+            <div className="hero-visual-small">
+              SIGMA
+            </div>
+
+            <div className="hero-visual-content">
+
+              <h2>
+                Built for
+                <br />
+                real business.
+              </h2>
+
+              <div className="hero-services">
+                <span>SOFTWARE</span>
+                <span>HARDWARE</span>
+                <span>SUPPORT</span>
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
       </div>

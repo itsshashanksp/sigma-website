@@ -5,7 +5,6 @@ import {
   User,
   Building2,
   Send,
-  Clock,
   MessageSquare,
 } from "lucide-react";
 
@@ -25,146 +24,242 @@ const Enquiry = () => {
   };
 
   return (
-    <main className="contact-page">
+    <main className="contact-page section">
       <div className="container contact-page-container">
-        {/* Left Content */}
-        <div className="contact-copy">
-          <span className="section-tag">Enquiry</span>
 
-          <h1 className="section-heading">
-            Request a Consultation
+        {/* ==========================================
+            LEFT CONTENT
+        ========================================== */}
+
+        <div className="contact-copy">
+
+          <span className="contact-tag">
+            Enquiry
+          </span>
+
+          <h1 className="contact-heading">
+            Let's Discuss Your Requirement
           </h1>
 
-          <p className="section-description">
-            Share your details and our team will get back to you for
-            consultation, technology solutions, and business discussions.
+          <p className="contact-description">
+            Tell us what you're looking for and our team will get back to
+            you to discuss the right solution for your business.
           </p>
 
-          {/* Contact Information */}
+
+          {/* CONTACT DETAILS */}
+
           <div className="contact-info">
 
-            <div className="info-card">
-            <div className="icon-box">
-             <Phone size={22} />
+            <div className="info-item">
+
+              <span className="info-label">
+                CALL US
+              </span>
+
+              <a
+                href="tel:+919741778096"
+                className="contact-link"
+              >
+                +91 97417 78096
+              </a>
+
             </div>
 
-              <div>
-                <h3>Call Us</h3>
-                <a href="tel:+919876543210" className="contact-link">
-                  +91 98450 21606
-                </a>
-              </div>
-            </div>
 
-            <div className="info-card">
-            <div className="icon-box">
-             <Mail size={22} />
-            </div>
+            <div className="info-item">
 
-              <div>
-                <h3>Email Us</h3>
-                <a
-                 href="mailto:info@sigmasoftwaresolutions.co.in" className="contact-link">
-                 info@sigmasoftwaresolutions.com
-                </a>
-              </div>
+              <span className="info-label">
+                EMAIL US
+              </span>
+
+              <a
+                href="mailto:info@sigmasoftwaresolutions.com"
+                className="contact-link"
+              >
+                info@sigmasoftwaresolutions.com
+              </a>
+
             </div>
 
           </div>
+
         </div>
 
-        {/* Form */}
-        <form className="contact-form" onSubmit={handleSubmit}>
 
-          <label className="form-field">
-            <span>Name</span>
+        {/* ==========================================
+            ENQUIRY FORM
+        ========================================== */}
+
+        <form
+          className="contact-form"
+          onSubmit={handleSubmit}
+        >
+
+          <div className="form-header">
+
+            <span className="form-label">
+              YOUR REQUIREMENT
+            </span>
+
+            <h2>
+              Tell us how we can help
+            </h2>
+
+          </div>
+
+
+          {/* NAME */}
+
+          <div className="form-group">
+
+            <label htmlFor="name">
+              Name
+            </label>
 
             <div className="input-wrap">
-              <User size={20} />
+
+              <User size={19} />
 
               <input
+                id="name"
                 type="text"
                 name="name"
                 placeholder="Enter your name"
                 required
               />
-            </div>
-          </label>
 
-          <label className="form-field">
-            <span>Email ID</span>
+            </div>
+
+          </div>
+
+
+          {/* EMAIL */}
+
+          <div className="form-group">
+
+            <label htmlFor="email">
+              Email ID
+            </label>
 
             <div className="input-wrap">
-              <Mail size={20} />
+
+              <Mail size={19} />
 
               <input
+                id="email"
                 type="email"
                 name="email"
                 placeholder="Enter your email"
                 required
               />
-            </div>
-          </label>
 
-          <label className="form-field">
-            <span>Mobile Number</span>
+            </div>
+
+          </div>
+
+
+          {/* MOBILE */}
+
+          <div className="form-group">
+
+            <label htmlFor="mobile">
+              Mobile Number
+            </label>
 
             <div className="input-wrap">
-              <Phone size={20} />
+
+              <Phone size={19} />
 
               <input
+                id="mobile"
                 type="tel"
                 name="mobile"
                 placeholder="Enter mobile number"
                 required
               />
-            </div>
-          </label>
 
-          <label className="form-field">
-            <span>Company Name (Optional)</span>
+            </div>
+
+          </div>
+
+
+          {/* COMPANY */}
+
+          <div className="form-group">
+
+            <label htmlFor="company">
+              Company Name
+              <span>Optional</span>
+            </label>
 
             <div className="input-wrap">
-              <Building2 size={20} />
+
+              <Building2 size={19} />
 
               <input
+                id="company"
                 type="text"
                 name="company"
                 placeholder="Enter company name"
               />
-            </div>
-          </label>
 
-          <label className="form-field">
-            <span>Message</span>
+            </div>
+
+          </div>
+
+
+          {/* MESSAGE */}
+
+          <div className="form-group">
+
+            <label htmlFor="message">
+              Message
+            </label>
 
             <div className="input-wrap textarea-wrap">
+
               <MessageSquare
-                size={20}
+                size={19}
                 className="textarea-icon"
               />
 
               <textarea
+                id="message"
                 name="message"
                 rows="5"
-                placeholder="Tell us about your project or requirements..."
+                placeholder="Tell us about your requirement..."
                 required
-              ></textarea>
-            </div>
-          </label>
+              />
 
-          <button className="primary-btn contact-submit" type="submit">
+            </div>
+
+          </div>
+
+
+          {/* SUBMIT */}
+
+          <button
+            className="contact-submit"
+            type="submit"
+          >
+            <span>
+              Send Enquiry
+            </span>
+
             <Send size={18} />
-            <span>Submit</span>
           </button>
+
 
           {submitted && (
             <p className="form-success">
-              Thank you! Your enquiry has been submitted successfully. Our team
-              will contact you soon.
+              Thank you! Your enquiry has been submitted successfully.
+              Our team will contact you soon.
             </p>
           )}
+
         </form>
+
       </div>
     </main>
   );

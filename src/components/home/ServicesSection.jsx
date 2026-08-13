@@ -1,27 +1,21 @@
-import {
-  FaLaptopCode,
-  FaServer,
-  FaPuzzlePiece,
-} from "react-icons/fa";
-
 const services = [
   {
-    icon: <FaPuzzlePiece />,
     title: "Custom Software Development",
     description:
       "We design and develop custom software solutions tailored to streamline business operations and improve productivity.",
+    tags: ["SOFTWARE", "BUSINESS APPLICATIONS"],
   },
   {
-    icon: <FaServer />,
     title: "Website Development",
     description:
-      "We build modern, responsive and SEO-friendly business websites that strengthen your online presence and drive growth.",
+      "We build modern, responsive and SEO-friendly business websites that strengthen your online presence and support business growth.",
+    tags: ["WEB DEVELOPMENT", "RESPONSIVE", "SEO"],
   },
   {
-    icon: <FaLaptopCode />,
     title: "Technology Consulting & Support",
     description:
-      "We provide expert technology consulting, implementation and ongoing support to help businesses operate efficiently and confidently.",
+      "We provide technology consulting, implementation and ongoing support to help businesses operate efficiently and confidently.",
+    tags: ["CONSULTING", "IMPLEMENTATION", "SUPPORT"],
   },
 ];
 
@@ -30,27 +24,62 @@ const ServicesSection = () => {
     <section id="services" className="services section">
       <div className="container">
 
-        <span className="section-tag">What We Do</span>
+        {/* SERVICES HEADER */}
+        <div className="services-header">
 
-        <h2 className="section-heading">
-          Technology Services That Help Businesses Grow
-        </h2>
+          <span className="services-tag">
+            What We Do
+          </span>
 
-        <p>We help businesses transform their operations through custom software, professional websites and reliable technology support tailored to their unique requirements.</p>
+          <h2 className="services-heading">
+            Technology Services Built Around Your Business
+          </h2>
+
+          <p className="services-description">
+            We provide practical technology services that help businesses
+            build, improve and maintain reliable digital systems.
+          </p>
+
+        </div>
+
+
+        {/* SERVICES CARDS */}
         <div className="services-grid">
-          {services.map((service, index) => (
-            <div className="service-card" key={index}>
 
-              <div className="service-icon">
-                {service.icon}
+          {services.map((service, index) => (
+            <article
+              className="service-card"
+              key={index}
+            >
+
+              <div className="service-card-content">
+
+                <h3 className="service-card-title">
+                  {service.title}
+                </h3>
+
+                <p className="service-card-description">
+                  {service.description}
+                </p>
+
               </div>
 
-              <h3>{service.title}</h3>
 
-              <p>{service.description}</p>
+              <div className="service-card-footer">
 
-            </div>
+                <div className="service-tags">
+                  {service.tags.map((tag) => (
+                    <span key={tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+              </div>
+
+            </article>
           ))}
+
         </div>
 
       </div>

@@ -1,50 +1,27 @@
-import {
-  FaCashRegister,
-  FaGlobe,
-  FaMobileAlt,
-  FaCode,
-  FaTools,
-  FaDesktop,
-  FaBarcode,
-  FaPrint,
-  FaNetworkWired,
-  FaLaptop,
-  FaPlug,
-} from "react-icons/fa";
-
-const softwareSolutions = [
+const businessSolutions = [
   {
-    icon: <FaCode />,
-    title: "Business Software",
-    description: "Custom business applications, ERP systems and workflow automation tailored to your organization.",
-  },
-  {
-    icon: <FaCashRegister />,
     title: "BINS POS",
-    description: "Reliable point-of-sale software trusted by businesses for efficient billing and retail management.",
+    description:
+      "Sigma's POS software solution designed to support day-to-day business operations, billing and retail management.",
+    tags: ["POS SOFTWARE", "BUSINESS OPERATIONS"],
   },
   {
-    icon: <FaGlobe />,
-    title: "Websites & Digital Solutions",
-    description: "Professional business websites, e-commerce platforms and digital solutions that strengthen your online presence",
-  },
-];
-
-const hardwareSolutions = [
-  {
-    icon: <FaBarcode />,
     title: "POS & Barcode Systems",
-    description: "Complete POS terminals, barcode scanners, receipt printers and billing hardware.",
+    description:
+      "POS terminals, barcode scanners, receipt printers and related billing hardware for business operations.",
+    tags: ["POS SYSTEMS", "BARCODE", "BILLING"],
   },
   {
-    icon: <FaDesktop />,
     title: "Business Computing",
-    description: "Desktop computers, laptops, workstations and business IT hardware for every workplace.",
+    description:
+      "Desktop computers, laptops and workstations designed to support everyday business requirements.",
+    tags: ["COMPUTERS", "WORKSTATIONS", "BUSINESS IT"],
   },
   {
-    icon: <FaNetworkWired />,
     title: "Networking & Infrastructure",
-    description: "Routers, switches, structured cabling and secure network infrastructure for modern businesses.",
+    description:
+      "Networking equipment and infrastructure solutions for reliable and connected business environments.",
+    tags: ["NETWORKING", "INFRASTRUCTURE", "CONNECTIVITY"],
   },
 ];
 
@@ -53,94 +30,69 @@ const ProductsSection = () => {
     <section id="products" className="products section">
       <div className="container">
 
-        <span className="section-tag">
-          Business Solutions
-        </span>
+        {/* HEADER */}
+        <div className="products-header">
 
-        <h2 className="section-heading">
-          Complete Software & Hardware Solutions
-        </h2>
-
-        <p className="section-description">
-          From business software to enterprise hardware, SIGMA provides integrated technology solutions that help organizations improve efficiency, productivity and long-term growth.
-        </p>
-
-        {/* SOFTWARE */}
-
-        <div className="solution-block">
-
-          <div className="solution-header">
-            <h3>Software Solutions</h3>
-            <p>
-                Powerful software solutions designed to automate business processes,
-                improve productivity and support long-term business growth.
-            </p>
+          <div className="products-header-label">
+            <span className="products-tag">
+              Our Products
+            </span>
           </div>
 
-          <div className="products-grid">
+          <div className="products-header-content">
 
-            {softwareSolutions.map((item, index) => (
+            <h2 className="products-heading">
+              Technology Solutions for Your Business
+            </h2>
 
-              <div
-                className="product-card"
-                key={index}
-              >
-
-                <div className="product-icon">
-                  {item.icon}
-                </div>
-
-                <h4>{item.title}</h4>
-
-                <p>
-                  {item.description}
-                </p>
-
-              </div>
-
-            ))}
+            <p className="products-description">
+              Software, hardware and technology solutions designed to support
+              the everyday needs of modern businesses.
+            </p>
 
           </div>
 
         </div>
 
-        {/* HARDWARE */}
 
-        <div className="solution-block">
+        {/* PRODUCTS */}
+        <div className="products-grid">
 
-          <div className="solution-header">
-            <h3>Hardware Solutions</h3>
+          {businessSolutions.map((product, index) => (
+            <article
+              className="product-card"
+              key={index}
+            >
 
-            <p>
-                Reliable IT hardware and infrastructure solutions that power modern
-                businesses with performance, stability and scalability.
-            </p>
-          </div>
+              <div className="product-card-content">
 
-          <div className="products-grid">
+                <h3 className="product-card-title">
+                  {product.title}
+                </h3>
 
-            {hardwareSolutions.map((item, index) => (
-
-              <div
-                className="product-card"
-                key={index}
-              >
-
-                <div className="product-icon">
-                  {item.icon}
-                </div>
-
-                <h4>{item.title}</h4>
-
-                <p>
-                  {item.description}
+                <p className="product-card-description">
+                  {product.description}
                 </p>
 
               </div>
 
-            ))}
 
-          </div>
+              <div className="product-card-footer">
+
+                <div className="product-tags">
+
+                  {product.tags.map((tag) => (
+                    <span key={tag}>
+                      {tag}
+                    </span>
+                  ))}
+
+                </div>
+
+              </div>
+
+            </article>
+          ))}
 
         </div>
 

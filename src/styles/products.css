@@ -1,134 +1,296 @@
 /* ==========================================
-   BUSINESS SOLUTIONS
+   PRODUCTS
 ========================================== */
 
-.products{
-    background:var(--background-light);
-    padding:30px 0;
+.products {
+    background: var(--background);
+    
+    padding: 110px;
+
+    overflow: hidden;
 }
 
-.products-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-    margin-top:40px;
-}
-
-.solution-block{
-    margin-bottom:70px;
-}
-
-.solution-block:last-child{
-    margin-bottom:0;
-}
-
-.solution-header{
-    margin-bottom:20px;
-}
-
-.solution-header h3{
-    font-family:"Poppins",sans-serif;
-    color:var(--secondary);
-    font-size:2rem;
-    margin-bottom:12px;
-}
-
-.solution-header p{
-    color:var(--text-secondary);
-    max-width:650px;
-    line-height:1.8;
-}
 
 /* ==========================================
-   CARD
+   HEADER
 ========================================== */
 
-.product-card{
-    background:#fff;
-    padding:35px;
-    border-radius:18px;
-    box-shadow:var(--shadow);
-    transition:.3s;
-    height:100%;
-    border:1px solid transparent;
+.products-header {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto 64px;
+
+    text-align: center;
 }
 
-.product-card:hover{
-    transform:translateY(-8px);
-    border-color:var(--primary);
-}
 
 /* ==========================================
-   ICON
+   LABEL
 ========================================== */
 
-.product-icon{
-    width:70px;
-    height:70px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:var(--primary);
-    color:#fff;
-    border-radius:50%;
-    font-size:28px;
-    margin-bottom:25px;
+.products-header-label {
+    margin-bottom: 26px;
 }
+
+.products-tag {
+    display: inline-block;
+
+    color: var(--primary);
+
+    font-family: var(--heading-font);
+
+    font-size: 0.72rem;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+}
+
 
 /* ==========================================
-   TITLE
+   HEADING
 ========================================== */
 
-.product-card h4{
-    font-family:"Poppins",sans-serif;
-    color:var(--secondary);
-    margin-bottom:15px;
-    font-size:1.3rem;
+.products-header-content {
+    width: 100%;
 }
+
+.products-heading {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    color: var(--text-primary);
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(3rem, 5vw, 4.5rem);
+
+    font-weight: 600;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.055em;
+}
+
 
 /* ==========================================
    DESCRIPTION
 ========================================== */
 
-.product-card p{
-    color:var(--text-secondary);
-    line-height:1.8;
-    margin:0;
+.products-description {
+    max-width: 780px;
+
+    margin: 30px auto 0;
+
+    color: var(--text-secondary);
+
+    font-family: var(--body-font);
+
+    font-size: 1.15rem;
+
+    line-height: 1.55;
 }
+
+
+/* ==========================================
+   PRODUCT GRID
+========================================== */
+
+.products-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 24px;
+}
+
+
+/* ==========================================
+   PRODUCT CARD
+========================================== */
+
+.product-card {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 300px;
+
+    padding: 38px 40px 28px;
+
+    background: var(--background-light);
+
+    border: 1px solid rgba(185, 95, 63, 0.12);
+
+    border-radius: var(--radius-lg);
+
+    transition:
+        transform var(--transition),
+        border-color var(--transition);
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(185, 95, 63, 0.3);
+}
+
+
+/* ==========================================
+   CARD CONTENT
+========================================== */
+
+.product-card-content {
+    flex: 1;
+}
+
+.product-card-title {
+    margin: 0 0 22px;
+
+    color: var(--text-primary);
+
+    font-family: var(--heading-font);
+
+    font-size: 1.55rem;
+
+    font-weight: 600;
+
+    line-height: 1.12;
+
+    letter-spacing: -0.025em;
+}
+
+.product-card-description {
+    max-width: 560px;
+
+    margin: 0;
+
+    color: var(--text-primary);
+
+    font-family: var(--body-font);
+
+    font-size: 1.08rem;
+
+    line-height: 1.55;
+}
+
+
+/* ==========================================
+   CARD FOOTER
+========================================== */
+
+.product-card-footer {
+    margin-top: 48px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(15, 23, 42, 0.14);
+}
+
+.product-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px 24px;
+}
+
+.product-tags span {
+    color: var(--text-primary);
+
+    font-family: var(--heading-font);
+
+    font-size: 0.68rem;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 0.12em;
+}
+
 
 /* ==========================================
    TABLET
 ========================================== */
 
-@media(max-width:992px){
+@media (max-width: 900px) {
 
-    .products-grid{
-        grid-template-columns:repeat(2,1fr);
+    .products-header {
+        max-width: 750px;
+
+        margin-bottom: 50px;
     }
 
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
 }
+
 
 /* ==========================================
    MOBILE
 ========================================== */
 
-@media(max-width:768px){
+@media (max-width: 600px) {
 
-    .products-grid{
-        grid-template-columns:1fr;
-        gap:20px;
+    .products-header {
+        margin-bottom: 40px;
     }
 
-    .product-card{
-        padding:28px;
+    .products-header-label {
+        margin-bottom: 22px;
     }
 
-    .solution-header{
-        text-align:center;
+    .products-heading {
+        font-size: clamp(2.6rem, 11vw, 3.5rem);
+
+        line-height: 1;
     }
 
-    .solution-header p{
-        margin:auto;
+    .products-description {
+        margin-top: 24px;
+
+        font-size: 1.05rem;
+
+        line-height: 1.5;
     }
 
+    .products-grid {
+        gap: 18px;
+    }
+
+    .product-card {
+        min-height: auto;
+
+        padding: 30px 26px 24px;
+    }
+
+    .product-card-title {
+        font-size: 1.4rem;
+
+        margin-bottom: 18px;
+    }
+
+    .product-card-description {
+        font-size: 1.05rem;
+
+        line-height: 1.5;
+    }
+
+    .product-card-footer {
+        margin-top: 38px;
+
+        padding-top: 18px;
+    }
+
+    .product-tags {
+        gap: 10px 18px;
+    }
 }

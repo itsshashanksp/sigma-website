@@ -1,7 +1,7 @@
 const AboutSection = () => {
   return (
     <section id="about" className="about section">
-      <div className="container about-container">
+      <div className="container">
 
         <div className="about-content">
 
@@ -9,31 +9,37 @@ const AboutSection = () => {
             About Sigma
           </span>
 
-          <h2>
-            Over 30+ Years of Trusted Technology Excellence
+          <h2 className="section-heading">
+            More Than Three Decades of Building Technology for Business
           </h2>
 
-          <p>
-            Since our inception, Sigma Software Solutions has been committed 
-            to helping businesses embrace technology with confidence. 
-            Over the past three decades, we have built long-lasting 
-            relationships by delivering reliable software, quality hardware, 
-            and exceptional customer support.
-          </p>
+          <div className="about-text">
 
-          <p>
-            As the creators of the BINS POS System, we provide complete business 
-            technology solutions from software development and POS systems to barcode solutions, 
-            enterprise hardware, and after-sales services ensuring our clients have everything they need under one roof.
-          </p>
+            <p>
+              Sigma Software Solutions is a technology company focused on
+              helping businesses adopt practical and reliable technology.
+              For more than three decades, we have built our experience by
+              working closely with businesses and understanding their
+              day-to-day technology requirements.
+            </p>
 
-        </div>
+            <p>
+              Our journey has been shaped by a simple belief technology
+              should solve real business problems. This experience has helped
+              us build long-term expertise in business software, POS
+              technology, IT hardware, and business technology solutions.
+            </p>
 
-        <div className="about-image">
-          <img
-            src={`${import.meta.env.BASE_URL}images/about/about-company.png`}
-            alt="About"
-          />
+            <p>
+              One of our key milestones was the development of BINS, our own
+              POS software solution designed around practical business
+              operations. BINS has been successfully running in the market
+              for more than 30 years and remains an important part of
+              Sigma's technology journey.
+            </p>
+
+          </div>
+
         </div>
 
       </div>

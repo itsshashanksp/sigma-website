@@ -1,0 +1,129 @@
+/* ==========================================
+   CSS RESET
+========================================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================================
+   HTML
+========================================== */
+
+html{
+    scroll-behavior:smooth;
+    font-size:16px;
+}
+
+/* ==========================================
+   BODY
+========================================== */
+
+body{
+    font-family:var(--body-font);
+    font-size:var(--body-size);
+    color:var(--text-primary);
+    background:var(--background);
+    line-height:1.7;
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   IMAGES
+========================================== */
+
+img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a{
+    text-decoration:none;
+    color:inherit;
+    transition:var(--transition);
+}
+
+/* ==========================================
+   LISTS
+========================================== */
+
+ul,
+ol{
+    list-style:none;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+button{
+    font-family:inherit;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    background:none;
+}
+
+/* ==========================================
+   INPUTS
+========================================== */
+
+input,
+textarea,
+select{
+    font-family:inherit;
+    font-size:inherit;
+    outline:none;
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+    width:min(var(--container-width),92%);
+    margin-inline:auto;
+}
+
+/* ==========================================
+   SECTION
+========================================== */
+
+.section{
+    padding:var(--section-padding) 0;
+}
+
+/* ==========================================
+   COMMON GRID
+========================================== */
+
+.grid{
+    display:grid;
+    gap:var(--gap-lg);
+}
+
+/* ==========================================
+   FLEX
+========================================== */
+
+.flex{
+    display:flex;
+    align-items:center;
+}
+
+/* ==========================================
+   HIDDEN
+========================================== */
+
+.hidden{
+    display:none;
+}

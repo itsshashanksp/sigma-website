@@ -1,167 +1,267 @@
 /* ==========================================
-   BUTTONS
+   SECTION HEADER
 ========================================== */
 
-.primary-btn,
-.secondary-btn{
+.section-header{
+    text-align:center;
+    max-width:720px;
+    margin:0 auto 60px;
+}
+
+.section-tag{
+    display:inline-block;
+    color:var(--primary);
+    font-size:.95rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:12px;
+}
+
+.section-heading{
+    font-family:var(--heading-font);
+    font-size:var(--section-title);
+    font-weight:700;
+    line-height:1.2;
+    color:var(--text-primary);
+    margin-bottom:18px;
+}
+
+.section-description{
+    color:var(--text-secondary);
+    font-size:1.05rem;
+    line-height:1.8;
+}
+
+/* ==========================================
+   PRIMARY BUTTON
+========================================== */
+
+.primary-btn{
     display:inline-flex;
     align-items:center;
     justify-content:center;
     gap:10px;
-    padding:14px 28px;
-    border-radius:10px;
-    font-size:1rem;
-    font-weight:600;
-    cursor:pointer;
-    text-decoration:none;
-    transition:all .3s ease;
-}
 
-.primary-btn{
+    padding:14px 30px;
+
     background:var(--primary);
-    color:#fff;
-    border:2px solid var(--primary);
+    color:var(--text-white);
+
+    border:none;
+    border-radius:var(--radius-md);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    cursor:pointer;
 }
 
 .primary-btn:hover{
-    background:var(--primary-dark);
-    border-color:var(--primary-dark);
+    background:var(--primary-hover);
     transform:translateY(-3px);
-    color:#fff;
+    box-shadow:var(--shadow);
 }
 
+/* ==========================================
+   SECONDARY BUTTON
+========================================== */
+
 .secondary-btn{
-    background:#fff;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    padding:14px 30px;
+
+    background:transparent;
+
     color:var(--primary);
+
     border:2px solid var(--primary);
+
+    border-radius:var(--radius-md);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    cursor:pointer;
 }
 
 .secondary-btn:hover{
+
     background:var(--primary);
+
     color:#fff;
-    transform:translateY(-3px);
+
 }
 
 /* ==========================================
-   CARD BUTTON
-========================================== */
-
-.learn-more{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    margin-top:auto;
-    color:var(--primary);
-    font-weight:600;
-    transition:.3s;
-}
-
-.learn-more:hover{
-    gap:14px;
-}
-
-/* ==========================================
-   ICON CIRCLE
-========================================== */
-
-.icon-circle{
-    width:70px;
-    height:70px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:rgba(189,79,52,.1);
-    color:var(--primary);
-    font-size:28px;
-    margin-bottom:20px;
-}
-
-/* ==========================================
-   STATS
-========================================== */
-
-.stats{
-    margin-top:60px;
-}
-
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:30px;
-}
-
-.stat-item{
-    text-align:center;
-}
-
-.stat-item h3{
-    font-size:2.5rem;
-    color:var(--primary);
-    font-family:"Poppins",sans-serif;
-}
-
-.stat-item p{
-    color:var(--text-secondary);
-    margin-top:8px;
-}
-
-/* ==========================================
-   BADGES
-========================================== */
-
-.badge{
-    display:inline-block;
-    padding:8px 18px;
-    border-radius:50px;
-    background:#F5E8E3;
-    color:var(--primary);
-    font-size:.9rem;
-    font-weight:600;
-}
-
-/* ==========================================
-   COMMON CARDS
+   CARD
 ========================================== */
 
 .card{
+
     background:#fff;
-    border-radius:18px;
-    padding:35px;
-    box-shadow:var(--shadow);
-    transition:.3s;
+
+    border-radius:var(--radius-lg);
+
+    padding:32px;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
 }
 
 .card:hover{
+
     transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
 }
 
 /* ==========================================
-   MOBILE
+   CARD ICON
 ========================================== */
 
-@media(max-width:768px){
+.card-icon{
 
-    .primary-btn,
-    .secondary-btn{
-        width:100%;
-    }
+    width:70px;
 
-    .stats-grid{
-        grid-template-columns:repeat(2,1fr);
-        gap:20px;
-    }
+    height:70px;
 
-    .stat-item h3{
-        font-size:2rem;
-    }
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:rgba(191,93,58,.08);
+
+    color:var(--primary);
+
+    font-size:30px;
+
+    margin-bottom:24px;
 
 }
 
-@media(max-width:480px){
+/* ==========================================
+   CARD TITLE
+========================================== */
 
-    .stats-grid{
-        grid-template-columns:1fr;
-    }
+.card-title{
+
+    font-size:1.35rem;
+
+    font-weight:600;
+
+    margin-bottom:14px;
+
+    color:var(--text-primary);
+
+}
+
+/* ==========================================
+   CARD DESCRIPTION
+========================================== */
+
+.card-description{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    margin-bottom:20px;
+
+}
+
+.form-group label{
+
+    font-weight:600;
+
+    color:var(--text-primary);
+
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-md);
+
+    transition:var(--transition);
+
+    background:#fff;
+
+}
+
+.form-group textarea{
+
+    resize:vertical;
+
+    min-height:140px;
+
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(191,93,58,.12);
+
+}
+
+/* ==========================================
+   BADGE
+========================================== */
+
+.badge{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:rgba(191,93,58,.08);
+
+    color:var(--primary);
+
+    font-size:.85rem;
+
+    font-weight:600;
 
 }

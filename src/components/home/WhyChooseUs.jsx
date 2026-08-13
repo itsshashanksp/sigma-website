@@ -1,48 +1,27 @@
-import {
-  FaAward,
-  FaUsers,
-  FaHeadset,
-  FaShieldAlt,
-  FaCogs,
-  FaBuilding,
-} from "react-icons/fa";
-
 const features = [
   {
-    icon: <FaAward />,
-    title: "30+ Years of Experience",
+    title: "Business Understanding",
     description:
-      "Delivering reliable software, hardware and IT solutions with over three decades of proven industry experience.",
+      "We focus on understanding how a business operates so technology can be practical, relevant and useful.",
+    tags: ["BUSINESS", "PRACTICAL"],
   },
   {
-    icon: <FaUsers />,
-    title: "Customer-First Approach",
+    title: "Proven Experience",
     description:
-      "We understand every business is unique and deliver solutions focused on long-term customer success.",
+      "More than three decades of experience working with businesses and their technology requirements.",
+    tags: ["30+ YEARS", "EXPERIENCE"],
   },
   {
-    icon: <FaShieldAlt />,
-    title: "Trusted Technology Partner",
+    title: "Software & Hardware",
     description:
-      "Businesses rely on SIGMA for dependable technology, quality service and lasting partnerships.",
+      "We bring software, POS systems, computing and technology hardware together to support complete business requirements.",
+    tags: ["SOFTWARE", "HARDWARE", "POS"],
   },
   {
-    icon: <FaHeadset />,
-    title: "Reliable & Scalable Solutions",
+    title: "Long-Term Support",
     description:
-      "Our solutions are designed to grow with your business while ensuring stability, performance and reliability.",
-  },
-  {
-    icon: <FaCogs />,
-    title: "Experienced Professionals",
-    description:
-    "Our skilled team combines technical expertise with practical business knowledge to deliver effective solutions.",
-  },
-  {
-    icon: <FaBuilding />,
-    title: "Commitment to Quality",
-    description:
-      "We focus on delivering high-quality products and services that meet the highest standards of performance.",
+      "Our relationship with customers goes beyond implementation, with continued technology support when it is needed.",
+    tags: ["SUPPORT", "LONG-TERM"],
   },
 ];
 
@@ -50,31 +29,65 @@ const WhyChooseUs = () => {
   return (
     <section id="why" className="why section">
       <div className="container">
-        <span className="section-tag">
-          Why Choose Us
-        </span>
 
-        <h2 className="section-heading">
-          Why Businesses Trust SIGMA
-        </h2>
+        {/* HEADER */}
+        <div className="why-header">
 
-        <p className="section-description">
-          For more than 30 years, businesses have trusted SIGMA for dependable technology solutions, experienced professionals and a commitment to delivering lasting value through quality products and services.
-        </p>
+          <span className="why-tag">
+            Why Choose Sigma
+          </span>
 
-        <div className="services-grid">
-          {features.map((item, index) => (
-            <div className="service-card" key={index}>
-              <div className="service-icon">
-                {item.icon}
+          <h2 className="why-heading">
+            Technology Built on Experience and Practical Understanding
+          </h2>
+
+          <p className="why-description">
+            We combine decades of business technology experience with a
+            practical approach to software, hardware and ongoing support.
+          </p>
+
+        </div>
+
+
+        {/* CARDS */}
+        <div className="why-grid">
+
+          {features.map((feature, index) => (
+            <article
+              className="why-card"
+              key={index}
+            >
+
+              <div className="why-card-content">
+
+                <h3 className="why-card-title">
+                  {feature.title}
+                </h3>
+
+                <p className="why-card-description">
+                  {feature.description}
+                </p>
+
               </div>
 
-              <h3>{item.title}</h3>
 
-              <p>{item.description}</p>
-            </div>
+              <div className="why-card-footer">
+
+                <div className="why-tags">
+                  {feature.tags.map((tag) => (
+                    <span key={tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+              </div>
+
+            </article>
           ))}
+
         </div>
+
       </div>
     </section>
   );

@@ -2,98 +2,180 @@
    STATS
 ========================================== */
 
-.stats{
-    background:linear-gradient(135deg,var(--primary),var(--primary-dark));
-    color:#fff;
-    padding: 10px 0 10px;
+.stats {
+    background: var(--background-light);
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    padding: 55px 0;
 }
 
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:30px;
-    align-items:center;
+
+/* ==========================================
+   GRID
+========================================== */
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    max-width: 1100px;
+
+    margin: 0 auto;
 }
 
-.stat-card{
-    text-align:center;
-    padding:20px;
+
+/* ==========================================
+   STAT ITEM
+========================================== */
+
+.stat-item {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 120px;
+
+    padding: 10px 30px;
+
+    text-align: center;
 }
 
-.stat-card h2{
-    font-size:3rem;
-    font-family:"Poppins",sans-serif;
-    font-weight:700;
-    color:#fff;
-    line-height:1.1;
-    margin-bottom:12px;
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.stat-item:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    top: 15px;
+    right: 0;
+
+    width: 1px;
+    height: calc(100% - 30px);
+
+    background: var(--border);
 }
 
-.stat-card p{
-    font-size:1.1rem;
-    color:rgba(255,255,255,.9);
-    font-weight:400;
-    line-height:1.5;
+
+/* ==========================================
+   NUMBER
+========================================== */
+
+.stat-number {
+    display: block;
+
+    color: var(--primary);
+
+    font-family: var(--body-font);
+
+    font-size: clamp(3rem, 4vw, 4.2rem);
+
+    font-weight: 400;
+
+    line-height: 0.9;
+
+    letter-spacing: -0.055em;
 }
 
-/* ==========================
-   Tablet
-========================== */
 
-@media(max-width:992px){
+/* ==========================================
+   LABEL
+========================================== */
 
-    .stats{
-        padding:70px 0;
-    }
+.stat-label {
+    display: block;
 
-    .stats-grid{
-        grid-template-columns:repeat(2,1fr);
-        gap:40px;
-    }
+    margin-top: 16px;
 
-    .stat-card h2{
-        font-size:2.7rem;
-    }
+    color: var(--text-primary);
 
+    font-family: var(--heading-font);
+
+    font-size: 0.68rem;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 0.13em;
+
+    text-transform: uppercase;
 }
 
-/* ==========================
-   Mobile
-========================== */
 
-@media(max-width:768px){
+/* ==========================================
+   TABLET
+========================================== */
 
-    .stats{
-        padding:60px 0;
+@media (max-width: 900px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        row-gap: 30px;
     }
 
-    .stats-grid{
-        grid-template-columns:1fr;
-        gap:35px;
+    .stat-item:nth-child(2)::after {
+        display: none;
     }
 
-    .stat-card{
-        padding:10px;
+    .stat-item:nth-child(3)::after {
+        display: block;
     }
-
-    .stat-card h2{
-        font-size:2.5rem;
-    }
-
-    .stat-card p{
-        font-size:1rem;
-    }
-
 }
 
-/* ==========================
-   Small Mobile
-========================== */
 
-@media(max-width:480px){
+/* ==========================================
+   MOBILE
+========================================== */
 
-    .stat-card h2{
-        font-size:2.2rem;
+@media (max-width: 600px) {
+
+    .stats {
+        padding: 40px 0;
     }
 
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        row-gap: 20px;
+    }
+
+    .stat-item {
+        min-height: 100px;
+
+        padding: 10px 16px;
+    }
+
+    .stat-item:nth-child(2)::after {
+        display: none;
+    }
+
+    .stat-item:nth-child(3)::after {
+        display: block;
+    }
+
+    .stat-number {
+        font-size: 3rem;
+    }
+
+    .stat-label {
+        margin-top: 12px;
+
+        font-size: 0.6rem;
+
+        letter-spacing: 0.1em;
+    }
 }

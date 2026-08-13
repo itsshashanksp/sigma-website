@@ -1,4 +1,4 @@
-import { NavLink  } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const CTASection = () => {
   return (
@@ -7,18 +7,36 @@ const CTASection = () => {
 
         <div className="cta-box">
 
-          <h2>
-            Ready to Transform Your Business?
-          </h2>
+          <div className="cta-content">
 
-          <p>
-            Partner with Sigma Consultants for innovative software,
-            enterprise technology, hardware solutions, and business automation.
-          </p>
+            <span className="cta-tag">
+              LET'S WORK TOGETHER
+            </span>
 
-          <NavLink  to="/enquiry" className="primary-btn">
-            Enquiry
-          </NavLink >
+            <h2 className="cta-heading">
+              Have a Technology Requirement?
+            </h2>
+
+            <p className="cta-description">
+              Tell us what your business needs and our team will help you
+              find the right solution.
+            </p>
+
+          </div>
+
+
+          <div className="cta-action">
+
+            <NavLink
+              to="/enquiry"
+              className="cta-button"
+            >
+              <span>Start a Conversation</span>
+              <span className="cta-arrow">→</span>
+            </NavLink>
+
+          </div>
+
         </div>
 
       </div>
