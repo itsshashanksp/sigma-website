@@ -141,6 +141,16 @@
     min-height: 330px;
 
     box-sizing: border-box;
+
+    transition:
+        transform var(--transition),
+        border-color var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(185, 95, 63, 0.3);
 }
 
 
@@ -229,16 +239,6 @@
     letter-spacing: 0.13em;
 
     text-transform: uppercase;
-}
-
-
-/* ==========================================
-   ARROW
-   Intentionally hidden
-========================================== */
-
-.service-arrow {
-    display: none;
 }
 
 

@@ -94,10 +94,6 @@ const IndustriesSection = () => {
                   ))}
                 </div>
 
-                <span className="industry-arrow">
-                  →
-                </span>
-
               </div>
 
             </article>

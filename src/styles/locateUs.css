@@ -128,6 +128,16 @@
     border-radius: var(--radius-lg);
 
     box-shadow: none;
+
+        transition:
+        transform var(--transition),
+        border-color var(--transition);
+}
+
+.office-card:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(185, 95, 63, 0.3);
 }
 
 

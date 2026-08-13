@@ -74,10 +74,10 @@ const Enquiry = () => {
               </span>
 
               <a
-                href="mailto:info@sigmasoftwaresolutions.com"
+                href="mailto:info@sigmasoftwaresolutions.co.in"
                 className="contact-link"
               >
-                info@sigmasoftwaresolutions.com
+                info@sigmasoftwaresolutions.co.in
               </a>
 
             </div>
